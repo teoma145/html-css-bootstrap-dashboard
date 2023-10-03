@@ -12,7 +12,7 @@
 .wrapper{
     width: 100%;
     height: 100vh;
-    background-color: rgb(172, 153, 153);
+    
 }
 .debug{
     border: 1px black solid;
@@ -42,15 +42,14 @@ main{
     background-color: var(--color-bg-search-bar);
     height: 35px;
     margin-top: 10px;
-    width:75%;
+    width: 100%;
 }
 #searchbar i{
     font-size: 1.2em;
     margin-top: 5px;
+    margin-left: 5px;
     
-}
-.mylogo{
-   width: 10%;
+    
 }
 .mylogom{
     width: 40px;
@@ -59,12 +58,8 @@ main{
 .inputsearch{
     border: none;
     background-color: var(--color-bg-search-bar);
-    width:85%;
-    
+    width: 85%;
 }
 .inputsearch:focus{
     outline: none;
-}
-.myiconsnav{
-    width: 15%;
 }
