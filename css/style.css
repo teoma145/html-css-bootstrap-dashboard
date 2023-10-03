@@ -19,11 +19,11 @@
 }
 header{
     width: 100%;
-    background-color: black;
-    height: 70px;
+    background-color:white;
+    height: 60px;
 }
 main{
-    height:calc(100% - 70px);
+    height:calc(100% - 60px);
     width: 100%;
     display: flex;
     
@@ -37,4 +37,34 @@ main{
 }
 #main-content{
     width:calc(100% - 150px);
+}
+#searchbar{
+    background-color: var(--color-bg-search-bar);
+    height: 35px;
+    margin-top: 10px;
+    width:75%;
+}
+#searchbar i{
+    font-size: 1.2em;
+    margin-top: 5px;
+    
+}
+.mylogo{
+   width: 10%;
+}
+.mylogom{
+    width: 40px;
+    
+}
+.inputsearch{
+    border: none;
+    background-color: var(--color-bg-search-bar);
+    width:85%;
+    
+}
+.inputsearch:focus{
+    outline: none;
+}
+.myiconsnav{
+    width: 15%;
 }
