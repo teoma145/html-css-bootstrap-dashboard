@@ -70,3 +70,16 @@ tr img{
     width: 22px;
     margin-right: 10px;
 }
+@media screen and (max-width: 992px){
+  .mydsnone {
+    display: none;
+  }
+}
+.mypillcolor{
+    background-color:#165BBA;
+}
+.breadcrumb-item:after {
+    content: '>>';
+    color: #ffffff; 
+    
+}
