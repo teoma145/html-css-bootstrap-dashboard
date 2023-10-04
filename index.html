@@ -11,20 +11,20 @@
  <body>
     <div class="wrapper">
         <header>
-          <div class="d-flex container-fluid">
-            <div class="me-3">
+          <div class="d-flex">
+            <div class="ms-2">
                 <img src="img/logo.svg" alt="logo" class="d-none d-md-block mt-3">
                 <img src="img/mobile-logo.png" alt="" class="d-md-none d-block mylogom mt-2">
             </div>
-            <div id="searchbar">
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-                <input type="text" class="inputsearch" placeholder="Prova a cercare: Lezioni di laravel">
+            <div id="searchbar" class="ms-2">
+                <span><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
+                <input type="text" class="inputsearch pt-1" placeholder="Prova a cercare: Lezioni di laravel">
             </div>
             <div class="py-3 d-flex flex-nowrap">
-                <i class="fa-solid fa-list ms-4 d-none d-xl-inline-block" style="color: #343941;"></i>
-                <i class="fa-solid fa-circle-question ms-4 d-none d-xl-inline-block" style="color: #343941;"></i>
-                <i class="fa-solid fa-ellipsis-vertical ms-4 d-none d-xl-inline-block" style="color: #343941;"></i>
-                <i class="fa-solid fa-bell ms-4"></i>
+                <i class="fa-solid fa-list ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
+                <i class="fa-solid fa-circle-question ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
+                <i class="fa-solid fa-ellipsis-vertical ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
+                <i class="fa-solid fa-bell ms-3 me-1"></i>
             </div>
           </div>
         </header>
@@ -33,17 +33,17 @@
             <div id="sidebar" class="d-flex flex-column justify-content-between">
                 <div>
                     <div class="d-flex align-items-center px-3 pt-3">
-                        <i class="fa-solid fa-house me-2" style="color: #ffffff;"></i><span class="text-white d-none d-xl-inline-block">Home</span> 
+                        <i class="fa-solid fa-house me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Home</span> 
                     </div>
                     <div class="d-flex align-items-center px-3 py-2">
-                        <i class="fa-solid fa-chart-simple me-2" style="color: #ffffff;"></i><span class="text-white d-none d-xl-inline-block">Stats</span>
+                        <i class="fa-solid fa-chart-simple me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Stats</span>
                     </div>
                     <div class="d-flex align-items-center px-3 py-2">
-                        <i class="fa-solid fa-signal me-2" style="color: #ffffff;"></i><span class="text-white d-none d-xl-inline-block">Signal</span>
+                        <i class="fa-solid fa-signal me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Signal</span>
                     </div>
                 </div>
                 <div class="d-flex align-items-center px-3 py-2">
-                    <i class="fa-solid fa-gear me-2" style="color: #ffffff;"></i><span class="text-white d-none d-xl-inline-block">Admin</span>
+                    <i class="fa-solid fa-gear me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Admin</span>
                 </div>
             </div>
             <div id="main-content">
@@ -60,34 +60,70 @@
                             <table class="table table-hover">
                                 <thead>
                                   <tr>
-                                    <th scope="col" class="col-6">#</th>
-                                    <th scope="col">First</th>
-                                    <th scope="col">Last</th>
-                                    <th scope="col">Handle</th>
-                                    <th scope="col">Handle</th>
+                                    <td class="col-7">Nome</td>
+                                    <td>Data Inizio</td>
+                                    <td>ROI</td>
+                                    <td>Stato</td>
+                                    <td>Azioni</td>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@fat</td>
+                                    <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
                                   </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>Larry the Bird</td>
-                                    <td>aaa</td>
-                                    <td>@twitter</td>
-                                    <td>@twitter</td>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-warning">Process</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
+                                  </tr>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
+                                  </tr>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
+                                  </tr>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
+                                  </tr>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-danger">Failed</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
+                                  </tr>
+                                  <tr">
+                                    <td scope="row"> <img src="img/class-avatar.jpg" alt="avatar">Classe 75</td>
+                                    <td>15 febbraio 2021</td>
+                                    <td>20%</td>
+                                    <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                    <td class="d-flex gap-2"><div><i class="fa-solid fa-pencil border p-1" style="color: #5b5d62;"></i></div><div><i class="fa-solid fa-trash border p-1" style="color: #5b5c5d;"></i></td></div>
                                   </tr>
                                 </tbody>
                               </table>

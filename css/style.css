@@ -29,20 +29,19 @@ main{
     
 }
 #sidebar{
-    width: 150px;
-    height: 100%;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--color-side-bar);
 
 }
 #main-content{
-    width:calc(100% - 150px);
+    flex-grow: 1;
 }
 #searchbar{
     background-color: var(--color-bg-search-bar);
     height: 35px;
     margin-top: 10px;
     width: 100%;
+    position: relative;
 }
 #searchbar i{
     font-size: 1.2em;
@@ -58,8 +57,18 @@ main{
 .inputsearch{
     border: none;
     background-color: var(--color-bg-search-bar);
-    width: 85%;
+    width:calc(100% - 30px);
+    position: absolute;
+    right: 0;
+    
 }
 .inputsearch:focus{
     outline: none;
+}
+tr img{
+    width: 22px;
+    margin-right: 10px;
+}
+.boh{
+    margin-left: 10px;
 }
