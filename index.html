@@ -20,11 +20,21 @@
                 <span><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></span>
                 <input type="text" class="inputsearch pt-1" placeholder="Prova a cercare: Lezioni di laravel">
             </div>
-            <div class="py-3 d-flex flex-nowrap">
+            <div class="py-2 d-flex flex-nowrap align-items-center">
                 <i class="fa-solid fa-list ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
                 <i class="fa-solid fa-circle-question ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
                 <i class="fa-solid fa-ellipsis-vertical ms-3 d-none d-xl-inline-block" style="color: #343941;"></i>
-                <i class="fa-solid fa-bell ms-3 me-1"></i>
+                <div class="dropdown">
+                    <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell" style="color: #d16c1a;"></i>
+                      </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                
             </div>
           </div>
         </header>
@@ -32,17 +42,17 @@
         <main class="debug">
             <div id="sidebar" class="d-flex flex-column justify-content-between">
                 <div>
-                    <div class="d-flex align-items-center px-3 pt-3">
+                    <div class="d-flex align-items-center px-3 pt-2 mylight">
                         <i class="fa-solid fa-house me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Home</span> 
                     </div>
-                    <div class="d-flex align-items-center px-3 py-2">
+                    <div class="d-flex align-items-center px-3 py-2 mylight">
                         <i class="fa-solid fa-chart-simple me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Stats</span>
                     </div>
-                    <div class="d-flex align-items-center px-3 py-2">
+                    <div class="d-flex align-items-center px-3 py-2 mylight">
                         <i class="fa-solid fa-signal me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Signal</span>
                     </div>
                 </div>
-                <div class="d-flex align-items-center px-3 py-2">
+                <div class="d-flex align-items-center px-3 py-2 mylight">
                     <i class="fa-solid fa-gear me-2" style="color: #ffffff;"></i><span class="text-white d-none d-md-inline-block">Admin</span>
                 </div>
             </div>
@@ -56,9 +66,11 @@
                                     <div>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#"><span class="badge rounded-pill text-white mypillcolor ms-2">3 app</span></a></li>
-                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2">Boolean mobile app</span></li>
-                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2">Boolean web app</span></li>
-                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2">Boolean blog app</span></li>
+                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2 d-none d-md-inline-block">Boolean mobile app</span></li>
+                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2 d-none d-md-inline-block">Boolean web app</span></li>
+                                            <li><span class="badge rounded-pill text-white mypillcolor ms-2 d-none d-md-inline-block">Boolean blog app</span></li>
+                                            <li class="mt-1"><span class="badge rounded-pill text-white mypillcolor ms-2 d-md-none d-block">+</span></li>
+
                                         </ol>
                                         
                                     </div>
@@ -80,41 +92,60 @@
                                         </div>
                                           <div class="offcanvas-body">
                                             <div>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                              <form class="row g-3 needs-validation" novalidate>
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">nome</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
                                                   </div>
-                                                  
-                                                  <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                                  <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
                                                   </div>
-                                                  
-                                                  <div class="mb-3">
-                                                    <label for="basic-url" class="form-label">Your vanity URL</label>
-                                                    <div class="input-group">
-                                                      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                                  <div class="col-md-6">
+                                                    <label for="validationCustomUsername" class="form-label">E-mail</label>
+                                                    <div class="input-group has-validation">
+                                                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                                                     </div>
-                                                    <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                                                   </div>
+                                                   <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
                                                   </div>
-                                                  
-                                                  <div class="input-group mb-3">
-                                                    <span class="input-group-text">$</span>
-                                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                                    <span class="input-group-text">.00</span>
+                                                  <div class="col-md-6">
+                                                    <label for="validationCustomUsername" class="form-label">Indirizzo E-mail</label>
+                                                    <div class="input-group has-validation">
+                                                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                      <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                    </div>
+                                                   </div>
+                                                   <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="inputPassword4">
                                                   </div>
-                                                  
-                                                  <div class="input-group mb-3">
-                                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                                                    <span class="input-group-text">@</span>
-                                                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                                                  <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
                                                   </div>
-                                                  
-                                                  <div class="input-group">
-                                                    <span class="input-group-text">With textarea</span>
-                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                  <div class="col-md-12">
+                                                    <label for="inputEmail4" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" id="inputEmail4">
                                                   </div>
+                                                  <div class="col-md-12">
+                                                    <label for="inputfoto" class="form-label">Foto</label>
+                                                    <input type="file" class="form-control" aria-label="file example" required id="inputfoto">
+                                                  </div>
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                      Seleziona per proseguire
+                                                    </label>
+                                                  </div>
+                                                  <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                                    <button type="button" class="btn btn-warning">Svuota</button>
+                                                  </div>
+                                              </form>
                                             </div>
                                           
                                         </div>

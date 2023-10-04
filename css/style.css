@@ -85,6 +85,14 @@ tr img{
 }
 
 #offcanvasExample{
-    width: 80%;
+    width: 100%;
     max-width: 1000px;
+}
+.mylight:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    
+}
+.mybtn{
+    background-color: transparent;
 }
