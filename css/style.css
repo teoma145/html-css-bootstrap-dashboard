@@ -96,3 +96,11 @@ tr img{
 .mybtn{
     background-color: transparent;
 }
+.myfs{
+    font-size: 0.7em;
+}
+@media screen and (min-width: 992px){
+    .myfs {
+      font-size: 1em;
+    }
+}
